@@ -50,6 +50,7 @@ a{
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .header__menu{
   display: flex;
@@ -62,7 +63,7 @@ a{
   border: 2px solid #FF7143;
   border-radius: 10px;
   background: #FF7143;
-  padding: 19px 60px;
+  padding: 14px 50px;
   color: #FFF;
   font-size: 17px;
   transition: all ease-in-out 0.3s;
@@ -89,6 +90,56 @@ a{
   opacity: 1;
 }
 
+/* .form_general{
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+} */
+
+
+
+/* Registr */
+.registration-form {
+  display: none;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.header__inner__form{
+  width: 300px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+.form__close{
+  font-size: 18px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#login_password{
+  margin-bottom: 10px ;
+}
+
+.registration-form label, #registration-form input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.registration-form input[type="submit"] {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 
 /* MAIN */
 
@@ -103,6 +154,7 @@ a{
 
 .main__inner-left{
   max-width: 460px;
+  position: relative;
 }
 
 .main__inner-right{
@@ -145,10 +197,56 @@ a{
 .left-btns{
   display: flex;
   gap: 40px;
+  align-items: center;
 }
-.btns-down{
+
+.arrow__btn{
+  width: 60px;
+  height: 60px;
   cursor: pointer;
 }
+   
+[for=burger]{
+    display: block;
+    width: 30px;
+    text-align: center;
+    right: 20px;
+    top: 10px;
+}
+[for=burger]::before{
+    content: '☰';
+}
+
+#burger:checked + label + .imageRow{
+    display: flex;
+    gap: 40px;
+    animation: show .5s ease;
+}
+#burger:checked +[for=burger]::before{
+    content: '⮾';
+}
+
+#burger{
+  display: none;
+}
+
+.burger__label{
+  font-size: 45px;
+  text-align: center;
+
+}
+
+.imageRow {
+  right: -50px;
+  position: absolute;
+  display: none;
+}
+
+.imageRow img{
+  width: 30px;
+  height: 30px;
+}
+
 
 /* CARDS */
 
