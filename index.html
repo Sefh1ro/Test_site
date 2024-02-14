@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    button{
+      cursor: pointer;
+    }
+
+    ul[class],
+    ol[class] {
+      padding: 0;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    ul[class],
+    ol[class],
+    li,
+    figure,
+    figcaption,
+    blockquote,
+    dl,
+    dd {
+      margin: 0;
+    }
+
+    p {
+      font-size: 24px;
+    }
+    a{
+      text-decoration: none;
+    }
+    *{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+    }
+
+    .container{
+      max-width: 1070px;
+      margin: 0 auto;
+    }
+
+    .header__inner{
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .header__menu{
+      display: flex;
+      min-width: 327px;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    .header__btn{
+      border: 2px solid #FF7143;
+      border-radius: 10px;
+      background: #FF7143;
+      padding: 19px 60px;
+      color: #FFF;
+      font-size: 17px;
+      transition: all ease-in-out 0.3s;
+    }
+    .header__btn:hover{
+      background: #FFF;
+      color:#FF7143;
+      border: 2px solid #FF7143;
+    }
+
+    .header__menu-item::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 1px;
+      background-color: #5454D4;
+      bottom: 0;
+      margin-top: 10px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans:wght@400;700&family=Roboto&display=swap"rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="" class="header__logo"><img src="./img/Logo Color.svg" alt="logo"></a>
+      <div class="header__menu">
+        <a href="" class="header__menu-item">Home</a>
+        <a href="" class="header__menu-item">Features</a>
+        <a href="" class="header__menu-item">Pricing</a>
+        <a href="" class="header__menu-item">Blog</a>
+      </div>
+      <button class="header__btn">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="main">
+      <div class="container">
+        <div class="main__inner">
+            <div class="main__inner-left">
+              <div class="left-title">Grow your
+              subscription
+              business</div>
+              <div class="left-subtitle">Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business end-to-end.</div>
+              <div class="left-btns">
+                <button class="btns-start">Get Started</button>
+                <a class="btns-down"><img src="./img/Down Arrow.svg" alt=""></a>
+              </div>
+            </div>
+            <img class="main__inner-right" src="./img/Hero 3D.png"></img>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cards">
+      <div class="container">
+        <div class="cards__inner">
+          <div class="card">
+            <img class="card-img" src="./img/2.png">
+            <div class="card-title">Data Visualization</div>
+            <div class="card-subtitle">The ability to present complex data in a visually understandable way, such as through charts.</div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./img/2.png">
+            <div class="card-title">Data Visualization</div>
+            <div class="card-subtitle">The ability to present complex data in a visually understandable way, such as through
+              charts.</div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./img/2.png">
+            <div class="card-title">Data Visualization</div>
+            <div class="card-subtitle">The ability to present complex data in a visually understandable way, such as through
+              charts.</div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./img/2.png">
+            <div class="card-title">Data Visualization</div>
+            <div class="card-subtitle">The ability to present complex data in a visually understandable way, such as through
+              charts.</div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./img/2.png">
+            <div class="card-title">Data Visualization</div>
+            <div class="card-subtitle">The ability to present complex data in a visually understandable way, such as through
+              charts.</div>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./img/2.png">
+            <div class="card-title">Data Visualization</div>
+            <div class="card-subtitle">The ability to present complex data in a visually understandable way, such as through
+              charts.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
