@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
+  
   <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans:wght@400;700&family=Roboto&display=swap"rel="stylesheet">
   <title>Document</title>
 </head>
@@ -11,14 +12,32 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a href="" class="header__logo"><img src="./img/Logo Color.svg" alt="logo"></a>
-      <div class="header__menu">
-        <a href="" class="header__menu-item">Home</a>
-        <a href="" class="header__menu-item">Features</a>
-        <a href="" class="header__menu-item">Pricing</a>
-        <a href="" class="header__menu-item">Blog</a>
-      </div>
-      <button class="header__btn">Get Started</button>
+          <a href="" class="header__logo"><img src="./img/Logo Color.svg" alt="logo"></a>
+        <div class="header__menu">
+          <a href="#" class="header__menu-item">Home</a>
+          <a href="#" class="header__menu-item">Features</a>
+          <a href="#" class="header__menu-item">Pricing</a>
+          <a href="#" class="header__menu-item">Blog</a>
+        </div>
+        <!-- <button id="show-form" class="header__btn">Sign up</button> -->
+        <button id="show-form-button" class="header__btn">Sign in</button>
+        
+
+        <div class="header__inner__form registration-form" >
+          <div class="form__close">
+            x
+          </div>
+          <form id="login-form" method="POST" action="php/login.php">
+            <label for="login_username">Mail:</label>
+            <input type="text" id="login_username" name="login_username" required>
+            
+            <label for="login_password">Password:</label>
+            <input type="password" id="login_password" name="login_password" required>
+            
+            <input type="submit" value="Sign in">
+            
+          </form>
+        </div>
       </div>
     </div>
   </header>
@@ -35,10 +54,39 @@
               <div class="left-subtitle">Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business end-to-end.</div>
               <div class="left-btns">
                 <button class="btns-start">Get Started</button>
-                <a class="btns-down"><img src="./img/Down Arrow.svg" alt=""></a>
+
+                <!-- <img src="./img/menu-burger.svg" alt="Image" class="arrow__btn"> -->
+                <input type="checkbox" id="burger" >
+                <label for="burger" class="burger__label"></label>
+                <div class="imageRow" id="imageRow">
+                  <img src="./img/tik-tok.svg" alt="Image1">
+                  <img src="./img/instagram.svg" alt="Image2">
+                  <img src="./img/telegram.svg" alt="Image3">
+                </div>
+                <!--<a class="btns-down"><img src="./img/Down Arrow.svg" alt=""></a>-->
               </div>
             </div>
             <img class="main__inner-right" src="./img/Hero 3D.png"></img>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <div class="main__inner registration-form">
+          <form id="registration-form" method="POST" action="php/main.php">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="usermail">Mail:</label>
+            <input type="email" id="usermail" name="usermail" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <input type="submit" value="Sign up">
+            
+          </form>
         </div>
       </div>
     </div>
@@ -87,4 +135,6 @@
     </div>
   </main>
 </body>
+<script src="script.js"></script>
+<script src="validation.js"></script>
 </html>
